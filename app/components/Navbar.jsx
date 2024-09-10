@@ -7,14 +7,14 @@ const Navbar = () => {
     <>
         <nav className='navbar flex items-center sticky top-0'>
             <div className="m-4">
-                <Image height={60} width={60} src={Logo} alt='Logo'/>
+                <Link href="/home"><Image height={60} width={60} src={Logo} alt='Logo'/></Link>
             </div>
             <ul className='flex'>
-                <li className='mx-12'><Link href="/home">Home</Link></li>
-                <li className='mx-12'><Link href="/men">Men</Link></li>
-                <li className='mx-12'><Link href="/women">Women</Link></li>
+                <li className='mx-12 hover:text-nav-light'><Link href="/home">Home</Link></li>
+                <li className='mx-12 hover:text-nav-light'><Link href="/men">Men</Link></li>
+                <li className='mx-12 hover:text-nav-light'><Link href="/women">Women</Link></li>
             </ul>
-            <span className='search-bar-nav bg-nav-light flex justify-end relative'><input className='w-full h-full bg-nav-light' placeholder='search bar'/><Image className='search' height={30} width={30} src={Search} alt='search'/></span>
+            <span className='search-bar-nav bg-nav-light flex justify-end relative'><input className='w-full h-full bg-nav-light focus:outline-none' placeholder='search bar'/><Image className='search' height={30} width={30} src={Search} alt='search'/></span>
             <ul className='flex ml-12'>
                 <li className='nav-account-button'><Link href="/login">Login</Link></li>
                 <li className='text-3xl text-gray-500'>|</li>
