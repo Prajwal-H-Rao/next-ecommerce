@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  font-family: "Ubuntu Mono", monospace;
+  @apply text-xl font-bold text-nav-dark bg-nav w-full z-10
+}
+
+.search-bar-nav {
+  @apply ml-80 mr-44 w-64 h-10 rounded-lg font-normal text-lg px-1 overflow-hidden;
+}
+
+.nav-account-button {
+  @apply bg-nav-dark hover:bg-nav-light text-white cursor-pointer hover:text-gray-300 font-bold py-1 px-4 rounded;
+}
+
+.hero-section {
+  @apply bg-cover w-full h-[88vh] object-center overflow-hidden
+}
+
+.hero-div {
+  @apply bg-nav-light opacity-20 brightness-90 absolute h-full left-0 top-0 bottom-0 right-0
+}
+
+.card-category-name {
+  @apply text-2xl absolute top-0 bottom-0 left-0 right-0 text-center content-center bg-nav-light opacity-80 font-bold text-nav-dark hidden
+}
+
+.card-container:hover .card-category-name{
+  @apply block
+}
+
+@keyframes scroll {
+  0% {
+    @apply translate-x-0
+  }
+  100% {
+    @apply -translate-x-[100%]
+  }
+}
+
+.brand{
+  @apply h-[100px] w-[100px];
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track {
+  @apply w-2/3 flex gap-12 justify-center overflow-hidden
+}
+
+.slider {
+  @apply mt-[70px] bg-nav-light py-12 px-8
+}
+
+.banner-logo,.search{
+  mix-blend-mode: color-burn;
+}
