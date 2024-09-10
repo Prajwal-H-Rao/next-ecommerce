@@ -16,9 +16,9 @@ const Navbar = () => {
             </ul>
             <span className='search-bar-nav bg-nav-light flex justify-end relative'><input className='w-full h-full bg-nav-light' placeholder='search bar'/><Image className='search' height={30} width={30} src={Search} alt='search'/></span>
             <ul className='flex ml-12'>
-                <li className='nav-account-button'>Login</li>
+                <li className='nav-account-button'><Link href="/login">Login</Link></li>
                 <li className='text-3xl text-gray-500'>|</li>
-                <li className='nav-account-button'>SignUp</li>
+                <li className='nav-account-button'><Link href="/signup">Signup</Link></li>
             </ul>
         </nav>
     </>
