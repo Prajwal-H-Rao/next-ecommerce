@@ -64,3 +64,7 @@
 .banner-logo,.search{
   mix-blend-mode: color-burn;
 }
+
+.product-container{
+  @apply grid grid-cols-3 place-items-center py-10 bg-slate-100
+}

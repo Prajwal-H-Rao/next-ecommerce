@@ -13,7 +13,7 @@ const Navbar = () => {
             <ul className='flex'>
                 {navLinks.map((item,key)=>(<li key={key} className='mx-12 hover:text-nav-light'><Link href={item.link}>{item.title}</Link></li>))}
             </ul>
-            <span className='search-bar-nav bg-nav-light flex justify-end relative'><input className='w-full h-full bg-nav-light focus:outline-none' placeholder='search bar'/><Image className='search' height={30} width={30} src={Search} alt='search'/></span>
+            <span className='search-bar-nav bg-nav-light flex justify-end relative shadow-nav-dark shadow-sm'><input className='w-full h-full bg-nav-light focus:outline-none' placeholder='search bar'/><Image className='search' height={30} width={30} src={Search} alt='search'/></span>
             <ul className='flex ml-12'>
                 <li className='nav-account-button'><Link href="/login">Login</Link></li>
                 <li className='text-3xl text-gray-500'>|</li>
